@@ -6,12 +6,22 @@ header {
     align-items: center;
 }
 
+
 .header {
-    background-color: yellow;
     display: flex; 
     justify-content: space-between;
     height: 350px;
     background: linear-gradient(#06582F, #082A19);
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        display: flex; 
+        justify-content: space-between;
+        flex-direction: column;
+        height: auto;
+    }
+    
 }
 
 .header-logo {

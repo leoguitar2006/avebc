@@ -7,8 +7,19 @@
     flex-direction: row;
     justify-content: space-around;
     background-color: #065A30;
-    padding-top: 150px;
+    padding-top: 8rem;
     flex-wrap: wrap;    
+}
+
+@media screen and (max-width: 768px) {
+    .association-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #065A30;
+        padding-top: 3rem;
+    }
+    
 }
 
 .association-info-members {
@@ -17,8 +28,16 @@
 
 .association-info-text {
     width: 50%;
-    padding-left: 30px;
+    padding-left: 1.8rem;
 }
+
+@media screen and (max-width: 768px) {
+    .association-info-text {
+        width: 100%;
+    }
+    
+}
+
 
 .association-info-title {
     display: flex;
@@ -26,14 +45,35 @@
     align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+    .association-info-title {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+}
+
 .association-info-title h1 {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 400;
-    line-height: 44.2px;
+    line-height: 2.75rem;
     letter-spacing: 1px;
     color: #29f48f;
     animation: fadeInUp;
     animation-duration: 1s; 
+}
+
+@media screen and (max-width: 768px) {
+    .association-info-title h1 {
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 2.75rem;
+        letter-spacing: 1px;
+        color: #29f48f;
+        animation: fadeInUp;
+        animation-duration: 1s; 
+        margin-bottom: 2rem;
+    }   
 }
 
 .association-info-title img {
@@ -43,6 +83,7 @@
 
 .association-info-description {
     padding-top: 20px;
+    padding: 2rem;
 }
 
 .association-info-description p:first-child {

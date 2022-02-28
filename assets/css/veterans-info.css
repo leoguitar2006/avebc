@@ -7,10 +7,30 @@
 
 }
 
+@media screen and (max-width: 768px) {
+    #veterans-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }   
+}
+
 .veterans-info-title {
     width: 50%;
     display: flex;
     justify-content: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+    .veterans-info-title {
+        text-align: center;
+        margin-bottom: 2rem;
+        width: 100%;
+        padding: 1rem 2rem 0 2rem;
+    }
+    
 }
 
 .veterans-info-title h1 {
@@ -22,8 +42,16 @@
     animation-duration: 1s; 
 }
 
+
 .veterans-info-text {
     width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .veterans-info-text {
+        width: 100%;
+        padding: 2rem;
+    }
 }
 
 .veterans-info-text p {

@@ -11,6 +11,12 @@
     align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+    .localization {
+        flex-direction: column;        
+    }
+}
+
 .mascot {
     animation: fadeInLeft;
     animation-duration: 1s; 
