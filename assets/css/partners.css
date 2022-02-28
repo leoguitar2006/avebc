@@ -1,0 +1,34 @@
+#partners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+}
+
+.partners-title h1 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 35.2px;
+    color: #065A30;
+    margin-bottom: 65px;
+    text-transform: uppercase;
+    animation: fadeInUp;
+    animation-duration: 1s; 
+}
+
+.partners-banners {
+    margin-bottom: 120px;
+}
+
+.partners-banners a {
+    text-decoration: none;
+}
+
+#partners .triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid #065A30;
+}

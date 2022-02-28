@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVEBC - Associação dos Veteranos do Exército Brasileiro em Campinas</title>
+    <link rel="icon" type="image/png"  href="assets/images/icon.png" />
+    <link rel="stylesheet" href="assets/lib/animate-css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/veterans-info.css">
+    <link rel="stylesheet" href="assets/css/association-info.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/news.css">
+    <link rel="stylesheet" href="assets/css/partners.css">
+    <link rel="stylesheet" href="assets/css/localization.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+<body>
+    <header>
+        <div class="container header">
+            <div class="header-logo wow">
+                <img class="img-logo" src="assets/images/logo-brigada.png" alt="Logo Brigada Anhanguera">
+            </div>
+            <div class="header-title"> 
+                <h1 class="wow">AVEBC</h1>
+                <p>Associação dos Veteranos do Exército Brasileiro em Campinas</p>   
+            </div>
+            <div class="header-logo wow">
+                <img src="assets/images/logo-avebc.png" alt="Logo AVEBC">       
+            </div>
+        </div>
+        <div class="triangle-up"></div>
+    </header>
+
+    <main >
+        <section id="veterans-info" class="container">
+            <div class="veterans-info-title">
+                <h1>VETERANOS DA BRIGADA ANHANGUERA</h1>
+            </div>
+            <div class="veterans-info-text">
+                <p>
+                    A <strong>Associação dos Veteranos do Exército Brasileiro em Campinas – AVEBC</strong> é um grupamento com caráter de 
+                    associação que têm por objetivo reunir os soldados, que um dia estiveram na ativa, em uma das Unidades da Corporação; 
+                    para que esse Veterano possa de forma saudosa relembrar os bons momentos do Exército e manter acessa a chama do
+                    verdadeiro soldado que é Servir e Protejer a sociedade.   
+                </p>
+            </div>
+        </section>
+
+        <section id="association-info">
+            <div class="container association-info">
+                <div class="association-info-members">
+                    <!-- Images used to open the lightbox -->
+                    <div class="row">
+                        <div class="column">
+                            <img src="assets/images/integrantes/Veterano Cabo Marcelino.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                        </div>
+                        <div class="column">
+                            <img src="assets/images/integrantes/Veterano Soldado Kleber.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                        </div>
+                        <div class="column">
+                            <img src="assets/images/integrantes/Veterano Soldado Masseran.jpeg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                        </div>
+                        <div class="column">
+                            <img src="assets/images/integrantes/Veterano Soldado Geraldo.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                        </div>
+                        <div class="column">
+                            <img src="assets/images/integrantes/Veterano Cabo Mateus.jpeg"  onclick="openModal();currentSlide(5)" class="hover-shadow">
+                        </div>
+                        <div class="column">
+                            <img src="assets/images/integrantes/Veterano Soldado Alceu.jpeg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+                        </div>
+                        <div class="column">
+                            <img src="assets/images/integrantes/Veterano Soldado Vlaudemir.jpeg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+                        </div>
+                        <div class="column">
+                            <img src="assets/images/integrantes/Veterano Soldado Hosael.jpeg"  onclick="openModal();currentSlide(8)" class="hover-shadow">
+                        </div>  
+                    </div>
+                    
+                    <!-- The Modal/Lightbox -->
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 8</div>
+                                <img src="assets/images/integrantes/Veterano Cabo Marcelino.jpeg" onclick="subtitleToggle()" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 8</div>
+                                <img src="assets/images/integrantes/Veterano Soldado Kleber.jpeg" onclick="subtitleToggle()" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 8</div>
+                                <img src="assets/images/integrantes/Veterano Soldado Masseran.jpeg" onclick="subtitleToggle()" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                                <div class="numbertext">4 / 8</div>
+                                <img src="assets/images/integrantes/Veterano Soldado Geraldo.jpeg" onclick="subtitleToggle()" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">5 / 8</div>
+                                <img src="assets/images/integrantes/Veterano Cabo Mateus.jpeg" onclick="subtitleToggle()" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">6 / 8</div>
+                                <img src="assets/images/integrantes/Veterano Soldado Alceu.jpeg" onclick="subtitleToggle()" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">7 / 8</div>
+                                <img src="assets/images/integrantes/Veterano Soldado Vlaudemir.jpeg" onclick="subtitleToggle()" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">8 / 8</div>
+                                <img src="assets/images/integrantes/Veterano Soldado Hosael.jpeg" onclick="subtitleToggle()" style="width:100%">
+                            </div>
+                        
+                            <!-- Next/previous controls -->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        
+                            <!-- Caption text -->
+                            <div class="caption-container">
+                                <span class="close cursor" onclick="closeSubtitle()">&times;</span>
+                                <p id="title"></p>
+                                <p id="caption"></p>
+                            </div>
+                        
+                            <!-- Thumbnail image controls -->
+                            <div class="column">
+                                <img class="demo" src="assets/images/integrantes/Veterano Cabo Marcelino.jpeg" onclick="currentSlide(1)" alt="O Veterano Cabo Marcelino incorporou - se no Exército Brasileiro no ano de 1992 no 28º BIB, na CIA de COMANDO (CCSv) e no Pelotão de Comunicação (PEL COM) 
+                                encerrando - se suas atividades na caserna no ano de 1997. Hoje o veterano exerce a profissão de autônomo na área de manutenção residencial." title="Veterano Cabo Marcelino">
+                            </div>
+                        
+                            <div class="column">
+                                <img class="demo" src="assets/images/integrantes/Veterano Soldado Kleber.jpeg" onclick="currentSlide(2)" alt="O Veterano Sargento kleber incorporou - se no Exército Brasileiro no ano de 1985 no 28º BIB, na 2ª CIA (CIA PANTERA) e também na 3ª CIA e no 3º Pelotão de 
+                                Fuzileriro Blindado encerrando - se suas atividades na caserna no ano de 1990. Hoje o veterano também é da reserva da PMESP e atualmente exerce a profissão de 
+                                atendente em uma empresa de Emergência Médicas no interior do estado." title="Veterano Soldado Kleber">
+                            </div>
+                        
+                            <div class="column">
+                                <img class="demo" src="assets/images/integrantes/Veterano Soldado Masseran.jpeg" onclick="currentSlide(3)" alt="O Veterano Soldado Masseran incorporou - se no Exército Brasileiro no ano de 1984 no 28º BIB, na 2ª CIA (CIA PANTERA) e no Pelotão de Apoio encerrando - se
+                                suas atividades na caserna no ano de 1985. Hoje o veterano exerce a profissão no desenvolvimento de material para cirurgias ortopédicas." title="Veterano Soldado Masseran">
+                            </div>
+                        
+                            <div class="column">
+                                <img class="demo" src="assets/images/integrantes/Veterano Soldado Geraldo.jpeg"  onclick="currentSlide(4)" alt="O Veterano Soldado Geraldo incorporou - se no Exército Brasileiro no ano de 1989 no 28º BIB, na 3ª CIA e no 3º Pelotão de Fuzileiro Blindado encerrando - se 
+                                suas atividades na caserna no ano de 1990. Hoje o veterano exerce a profissão de implantação de sistema de CFTV." title="Veterano Soldado Geraldo">
+                            </div>
+
+                            <div class="column">
+                                <img class="demo" src="assets/images/integrantes/Veterano Cabo Mateus.jpeg" onclick="currentSlide(5)" alt="O Veterano Cabo Mateus incorporou - se no Exército Brasileiro no ano 1984 na 2ª CIA COM BLD, no Pelotão PCR encerrando - se suas atividades na caserna no
+                                ano de 1992. Hoje o veterano exerce as seguintes atividades, Designer, Capelão e Coaching." title="Veterano Cabo Mateus">
+                            </div>
+
+                            <div class="column">
+                                <img class="demo" src="assets/images/integrantes/Veterano Soldado Alceu.jpeg" onclick="currentSlide(6)" alt="O Veterano Soldado Alceu incorporou - se no Exército Brasileiro no ano de 1993 no 28º BIB, na 2ª CIA (CIA PANTERA) e no 2º Pelotão de Fuzileiro Blindado
+                                encerrando - se suas atividades na caserna no ano de 1994. Hoje o veterano exerce a profissão de Analista de Suporte de TI." title="Veterano Soldado Alceu">    
+                            </div>
+
+                            <div class="column">
+                                <img class="demo" src="assets/images/integrantes/Veterano Soldado Vlaudemir.jpeg"  onclick="currentSlide(7)" alt="O Veterano Soldado Vlaudemir incorporou - se no Exército Brasileiro no ano 1995 no 28º BIB, na 1ª CIA e no 1º Pelotão Pelotão de Fuzileiro Blindado 
+                                (PELOPES - Pelotão de Operações Especiais) encerrando - se suas atividades na caserna no mesmo ano saindo na primeira baixa. Hoje o veterano exerce a profissão 
+                                de Mestre de Muay Thai." title="Veterano Soldado Vlaudemir">   
+                            </div>
+
+                            <div class="column">
+                                <img class="demo" src="assets/images/integrantes/Veterano Soldado Hosael.jpeg" onclick="currentSlide(8)" alt="O Veterano Soldado Hosael incorporou - se no Exército Brasileiro no ano de 1985 no 28º BIB, na 1ª CIA e no 3º Pelotão de Fuzileiro Blindado
+                                encerrando - se suas atividades na caserna no ano de 1986. Hoje o veterano exerce a profissão de radialista e jornalista em Sumaré/SP e também trabalha na Prefeitura
+                                de Sumaré, lotado na Secretaria de Comunicação Social."  title="Veterano Soldado Hosael">   
+                            </div>
+                        </div>
+                    </div>            
+                </div>
+                <div class="association-info-text">
+                    <div class="association-info-title">
+                        <h1 class="wow">Uma grande história</h1>
+                        <img src="assets/images/capa-brigada.png" alt="">
+                    </div>   
+                    <div class="association-info-description">
+                        <p><strong>Fundada em 27 de Abril de 2019, a Associação dos Veteranos do Exército Brasileiro em Campinas.</strong></p>
+                        <p>A <strong>AVEBC</strong> é a primeira <strong>Associação de Veteranos do Exército Brasileiro</strong> que abrange a <strong>11º Brigada de Infantaria Leve</strong>.</p>
+                        <p>
+                            A <strong>AVEBC</strong>, foi fundada pelos veteranos do <strong>28º Batalhão de Infantaria Blindado</strong>, Veterano CB Marcelino, juntamente com o SD 
+                            Geraldo e demais praças e um Oficial CAP Valdir, SGT Kleber, SGT Braghetto, CB Mateus, CB Aguinaldo, CB Satti, 
+                            SD Masseran, SD Hosael, SD Oliveira, SD Vitor, SD Franklin, SD Alceu, SD Lima, SD William e SD Vlaudenir.
+                        </p>
+                    </div> 
+                </div> 
+                <div class="triangle-up"></div>   
+            </div>
+        </section>
+
+        <section id="news" class="container">
+            <div class="news-info">
+                <div class="news-main-text"> 
+                    <h1 class="wow">Notícias</h1>
+                </div>
+                <!-- <div><h1>Titulo da notícia</h1></div>
+                <div><h3>Subtitulo da noticia</h3></div>
+                <div><p>Texto da noticia</p></div> -->
+            </div>
+            <div class="join-military-career">
+                <h1 class="wow">Quer ingressar na carreira militar?</h1>
+                <p>Veja quais os requisitos e documentações necessárias.</p>
+                <a href="http://www.eb.mil.br/web/ingresso/como-ingressar" target="_blank" rel="noopener noreferrer">Clique Aqui</a>
+                <div class="separator wow"></div>
+            </div>
+        </section>
+
+        <section id="partners" class="container">
+            <div class="partners-title ">
+                <h1 class="wow">Patrocinadores</h1>
+            </div>
+            <div class="partners-banners">
+                <a href="https://api.whatsapp.com/send?phone=5519981704156&text=QUERO5bd9b6d616e453d748f238b3d9c6c43b7e1a1643c7a71b36ac752b540552c5c020AGENDER5bd9b6d616e453d748f238b3d9c6c43b7e1a1643c7a71b36ac752b540552c5c020UMA5bd9b6d616e453d748f238b3d9c6c43b7e1a1643c7a71b36ac752b540552c5c020VISITA" target="_blank">
+                    <img src="assets/images/espaco-coyote.jpg" alt="Espaço Coyote" title="Espaço Coyote">
+                </a>
+            </div>
+            <div class="triangle-up"></div>   
+        </section>
+
+        <section id="localization">
+            <div class="container localization">
+                <div class="mascot wow">
+                    <img src="assets/images/mascote-avebc.png" alt="" srcset="">
+                </div>
+                <div class="localization-info">
+                    <h1 class="wow">AVEBC</h1>
+                    <p>Associação dos Veteranos do Exército Brasileiro em Campinas</p>
+                    <p class="email"><a href="mailto:veteranos@avebc.com.br">veteranos@avebc.com.br</a></p>
+                    <p class="city">Campinas - SP</p>
+                    <div class="social-media">
+                        <a href="#"><img src="assets/images/facebook.png" alt=""></a>
+                        <a href="#"><img src="assets/images/Instagram.png" alt=""></a>
+                    </div>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235236.41901556787!2d-47.20798056183056!3d-22.89237282949183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c61de74b6325%3A0x17e53a6a2178c22a!2sCampinas%2C%20State%20of%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1646004538417!5m2!1sen!2sbr" width="360" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="container">
+        <p>Copyright &copy; MW Websites | Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/7368c40b21.js" crossorigin="anonymous" ></script>
+    <script src="assets/lib/wow-js/wow.min.js" crossorigin="anonymous" ></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
