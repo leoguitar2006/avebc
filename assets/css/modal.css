@@ -36,11 +36,15 @@
     }    
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+@media screen and (min-width > 768px) {
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }   
 }
+
+
 
 /* Create four equal columns that floats next to eachother */
 .column {

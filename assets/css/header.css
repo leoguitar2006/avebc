@@ -32,6 +32,13 @@ header {
     animation-duration: 1s; 
 }
 
+@media screen and (max-width: 768px) {
+    .header-logo {
+        padding-bottom: 1rem;
+    }
+    
+}
+
 .header-logo .img-logo {
     width: 235px;
     height: 225px;
