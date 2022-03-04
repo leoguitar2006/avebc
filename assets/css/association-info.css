@@ -94,6 +94,12 @@
     padding: 1.2rem 1.2rem 1.2rem 0;
 }
 
+@media screen and (max-width: 768px) {
+    .association-info-description {
+        padding: 1rem;
+    }    
+}
+
 .association-info-description p:first-child {
     padding-top: 30px;
     font-size: 19px;
@@ -112,4 +118,10 @@
 
 #association-info .triangle-up {
     margin-top: 110px;
+}
+
+@media screen and (max-width: 768px) {
+    #association-info .triangle-up {
+        margin-top: 50px;
+    }
 }
