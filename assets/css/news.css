@@ -5,10 +5,27 @@
     padding-top: 90px;
 }
 
+@media screen and (max-width: 768px) {
+    #news {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+}
+
 .news-info {
     display: flex;
     flex-direction: column;
     width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .news-info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .news-main-text h1 {
@@ -29,19 +46,32 @@
     padding: 20px;
 }
 
+@media screen and (max-width: 768px) {
+    .join-military-career {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 1.2rem;
+        text-align: center;
+    }
+}
+
 .join-military-career h1 {
-    font-size: 20px;
+    font-size: 1.5rem;
     line-height: 22.9px;
     color: #065A30;
     animation: fadeInUp;
     animation-duration: 1s; 
+    margin-bottom: 0.5rem;
 }
 
 .join-military-career p {
-    font-size: 16px;
+    font-size: 1.1rem;
     line-height: 25.6px;
     color: #374951;
-    padding-bottom: 10px;
+    padding-bottom: 1.5rem;
 }
 
 .join-military-career a {
@@ -51,7 +81,7 @@
     height: 45px;
     background-color: #29F48F;
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 45px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -63,7 +93,18 @@
     width: 25px;
     height: 2px;
     background-color: #065A30;
-    margin-left: 20px;
+    /* margin-left: 1.2rem; */
     animation: bounceIn;
     animation-duration: 1s; 
+}
+
+@media screen and (max-width: 768px){
+    .separator {
+        width: 25px;
+        height: 2px;
+        background-color: #065A30;
+        animation: bounceIn;
+        animation-duration: 1s; 
+    }    
+    
 }

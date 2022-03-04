@@ -26,6 +26,13 @@
     width: 50%;
 }
 
+@media screen and (max-width: 768px) {
+    .association-info-members {
+        width: 100%;
+    }
+    
+}
+
 .association-info-text {
     width: 50%;
     padding-left: 1.8rem;
@@ -54,8 +61,8 @@
 }
 
 .association-info-title h1 {
-    font-size: 2rem;
-    font-weight: 400;
+    font-size: 2.6rem;
+    font-weight: 500;
     line-height: 2.75rem;
     letter-spacing: 1px;
     color: #29f48f;
@@ -82,8 +89,7 @@
 }
 
 .association-info-description {
-    padding-top: 20px;
-    padding: 2rem;
+    padding: 1.2rem 1.2rem 1.2rem 0;
 }
 
 .association-info-description p:first-child {

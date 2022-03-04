@@ -3,6 +3,10 @@
     height: 150px;
 }
 
+.column img:hover {
+    cursor: pointer;
+}
+
 .row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -16,7 +20,7 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 1px;
-        /* grid-auto-rows: minmax(150px, auto); */
+        grid-auto-rows: minmax(150px, auto);
     }    
     
 }
@@ -24,6 +28,12 @@
 .row>.column {
     padding-top: 10px;
     padding-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .row>.column {
+        padding-bottom: 1rem;
+    }    
 }
 
 .row:after {
@@ -37,6 +47,18 @@
     float: left;
     width: 12.5%;
 }
+
+@media screen and (max-width: 768px) {
+    .column {
+        align-items: center;
+        float: left;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+}
+
 
 /* The Modal (background) */
 .modal {
@@ -55,22 +77,21 @@
 /* Modal Content */
 .modal-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: rgba(0, 0, 0, 0.8);
     margin: auto;
     padding: 0;
-    width: 100%;
-    max-width: 1200px;
-    width: 600px;
-    border: 1px solid #FFF;
 }
 
 .mySlides {
-    height: 600px;
+    justify-content: center;
+    align-items: center;
 }
 
 .mySlides img {
-    height: 600px;
-    justify-content: center;
+    max-height: 75vh;
+    max-width: 100%;
+
+    border: 1px solid #000; 
 }
 
 /* The Close Button */
@@ -137,12 +158,25 @@
 /* Caption text */
 .caption-container {
     position: absolute;
-    bottom: 0px;
+    bottom: 85px;
     text-align: center;
     background-color: black;
     padding: 2px 16px;
     color: white;
     opacity: 0.80;
+}
+
+@media screen and (max-width: 768px) {
+    .caption-container {
+        position: absolute;
+        bottom: 0px;
+        text-align: center;
+        background-color: black;
+        padding: 2px 16px;
+        color: white;
+        opacity: 0.80;
+        font-size: 0.75rem;
+    }
 }
 
 .caption-container .close {
@@ -164,6 +198,13 @@ img.demo {
     opacity: 0.6;
     width: 75px;
     height: 75px;
+}
+
+
+@media screen and (max-width: 768px) {
+    img.demo {
+        display: none;
+    }
 }
 
 .active,
